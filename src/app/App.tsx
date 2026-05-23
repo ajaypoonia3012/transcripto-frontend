@@ -182,7 +182,9 @@ function UploadPage({ navigate }: { navigate: (p: Page) => void }) {
             />
 
             <label htmlFor="fileUpload">
-              <button className="px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 transition-colors flex items-center gap-2 cursor-pointer">
+              <button 
+ onClick={() => document.getElementById("fileUpload")?.click()}
+className="px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 transition-colors flex items-center gap-2 cursor-pointer">
                 <FolderOpen className="w-4 h-4" />
                 Browse files
               </button>
